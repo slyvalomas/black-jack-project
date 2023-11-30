@@ -82,3 +82,28 @@ document.getElementById("message-el").textContent=message2
 console.log(message2)
 }
 
+let hello = ["hello my ",
+"name",
+"is",
+"brahim",
+"abd",
+"almoumen",
+"now im learning it by the freecode camp course ",
+"i need to put more hard work and more hours because why",
+"did i get out of school if i will just spent 5-6h a day?"
+]
+let see = document.querySelector("div")
+
+for (i=0; i<hello.length ; i++){
+    see.textContent+= " "+hello[i] 
+    console.log(hello[i])
+}
+let message =[" nonono lala","oh ues ","yes html ! bla bla","css java?","are you fine","hi how are you"]
+let newMessage ="oh yeah you are right"
+message.push(newMessage)
+message.pop()
+console.log(message[Math.floor(Math.random()*11)])
+let message =["fist is first","rain is down","wthhhhh omg nowayaya bro hold on hold on  jordan never did that movee","thats borden","okiokiokioki lalalal","jesus","sometimes"]
+for (let x = 0;x>10;x+=1){
+console.log(x)
+}
