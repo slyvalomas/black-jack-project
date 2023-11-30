@@ -107,3 +107,30 @@ let message =["fist is first","rain is down","wthhhhh omg nowayaya bro hold on h
 for (let x = 0;x>10;x+=1){
 console.log(x)
 }
+let player1 = 101
+let player2 = 102
+function howFast(){
+    if (player1<player2){
+        return player1
+    }else if (player1===player2){
+        return + player1
+    }else{
+        return player1 
+    }
+}
+let faster = howFast()
+document.querySelector("div").textContent="the faster racer is " +faster +"s"
+function totalTime(){
+    var totalTimer = player1 +player2 //mmm i did face some wired questions like this on biology is it a race that going on just 1time 
+    return totalTimer
+}
+function totalTime1(){
+    if (player1>=player2){
+        return player1
+    }else{
+        return player2
+    } 
+}
+let totalTiming = totalTime()
+let totalTiming1 = totalTime1()
+document.querySelector("div").textContent+=" the total race is  " + totalTiming+"s" +" or its "+totalTime1()
