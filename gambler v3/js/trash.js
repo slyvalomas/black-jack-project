@@ -134,3 +134,66 @@ function totalTime1(){
 let totalTiming = totalTime()
 let totalTiming1 = totalTime1()
 document.querySelector("div").textContent+=" the total race is  " + totalTiming+"s" +" or its "+totalTime1()
+// V1
+// let fruit =["apple","orange","apple","apple","orange"]
+// function addApple(){
+//     let apple = fruit.filter(item=> item==="apple");
+//     document.querySelector(".apple").textContent=apple
+// }
+// function addOrange(){
+//     let orange = fruit.filter(item=> item==="orange");
+//     document.querySelector(".orange").textContent=orange
+// }
+// addApple()
+// addOrange()
+//V2
+let fruit =["apple","orange","apple","apple","orange"]
+let apple = document.querySelector(".apple")
+let orange =document.querySelector(".orange")
+function add(){
+    for (i=0;i<fruit.length;i++){
+        if (fruit[i]==="orange"){
+            orange.textContent+=" "+fruit[i]
+        }else{
+            apple.textContent+=" "+fruit[i]
+        }
+    }
+}
+add()
+function take(){
+    let meHand = "scissor"
+    let rsandomaize=Math.floor(Math.random()*3)
+    let pcHands = ["rock","paper","scissor"]
+    console.log("the pc hand is : "+pcHands[rsandomaize])
+    console.log("your hand is : "+meHand)
+    
+    let msg=""
+    if (pcHands[rsandomaize]===meHand){
+        msg="tie!"
+    }else if   ((pcHands[rsandomaize]==="rock" && meHand==="scissor")||
+                (pcHands[rsandomaize]==="paper" && meHand==="rock")||
+                (pcHands[rsandomaize]==="scissor" && meHand==="paper"))
+    {
+        msg="you lose the pc win!"
+    }else{
+        msg="you win!"
+    }
+    console.log(msg)
+}
+take()
+let day = 1
+let week = "friday"
+if (day===13 && week==="friday"){
+    console.log("booooo")
+}else{
+    console.log("its not boooo!")
+}
+let largeCountries = ["russia","canada","usa","china"]
+
+
+for (i=0;i<largeCountries.length;i++){
+    console.log("the largest countries in the world are:")
+    console.log("-"+largeCountries[i])
+
+
+}
